@@ -1,0 +1,1 @@
+json.partial! 'tasks/task', task: @task_to_share
