@@ -5,6 +5,9 @@ ruby '2.3.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
+
+gem 'bundler', '>= 1.8.4'
+
 # Use mysql as the database for Active Record
 gem 'mysql2'
 # Use Puma as the app server
@@ -39,7 +42,11 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bootstrap'
 
+gem 'rails-assets-jquery.countdown', source: 'https://rails-assets.org'
+
 gem 'jquery-rails'
+
+gem 'rails-assets-bootstrap-progressbar', source: 'https://rails-assets.org'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

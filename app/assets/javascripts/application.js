@@ -15,5 +15,7 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery3
+//= require jquery.countdown
+//= require bootstrap-progressbar
 //= require popper
 //= require bootstrap-sprockets

@@ -11,8 +11,7 @@ Rails.application.routes.draw do
   post '/awaiting/:user_id', to: 'users#update'
   post '/user_needs_help/:user_id', to: 'users#needs_help'
 
+  get '/timers', to: 'timers#manager_create'
   get '/time_remaining', to: 'timers#show'
   post '/timers', to: 'timers#create'
-
-
 end
