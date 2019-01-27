@@ -266,7 +266,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  appengine
+  appengine (~> 0.4.6)
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)

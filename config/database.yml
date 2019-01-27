@@ -13,9 +13,11 @@ development:
   database: tamuhack2019
 
 production:
-  <<: *default
-  username: <%= ENV['DB_USERNAME'] %>
-  password: <%= ENV['DB_PASS'] %>
-  socket: <%= ENV['DB_SOCKET'] %>
-  database: <%= ENV['DB_NAME'] %>
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  username: "rails-app"
+  password: "tamuhack2019!"
+  database: "tamuhack2019"
+  socket:   "/cloudsql/tamuhack2019-todo:us-central1:tamuhack2019-todo"
 

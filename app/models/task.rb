@@ -5,7 +5,10 @@ class Task < ApplicationRecord
   scope :completed, -> { where(completed: true) }
   scope :uncompleted, -> { where(completed: false) }
 
-  scope :progress_percent, -> { (uncompleted.count / completed.size) * 100 }
-
   default_scope { order(:completed) }
+
+  def self.progress_percent
+    puts((1/5))
+    ((completed.count.to_f / uncompleted.count.to_f) * 100).to_f
+  end
 end
