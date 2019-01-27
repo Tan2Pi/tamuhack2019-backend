@@ -12,3 +12,10 @@ development:
   socket: '/Applications/MAMP/tmp/mysql/mysql.sock'
   database: tamuhack2019
 
+production:
+  <<: *default
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASS'] %>
+  socket: <%= ENV['DB_SOCKET'] %>
+  database: <%= END['DB_NAME'] %>
+

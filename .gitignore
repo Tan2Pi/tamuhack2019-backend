@@ -33,3 +33,5 @@
 # .idea
 .idea/
 
+# GCP stuff
+app.yaml
